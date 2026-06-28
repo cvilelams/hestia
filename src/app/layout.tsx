@@ -18,7 +18,15 @@ const sourceSans = Source_Sans_3({
   weight: ["300", "400", "500", "600"],
 });
 
+const siteUrl =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL != null
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL != null
+      ? `https://${process.env.VERCEL_URL}`
+      : siteConfig.url;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,

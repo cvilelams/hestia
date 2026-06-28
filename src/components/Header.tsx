@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -12,13 +13,24 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-hearth/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link href="/" className="group flex flex-col">
-          <span className="font-serif text-2xl font-semibold tracking-tight text-depth transition-colors group-hover:text-gold">
-            {siteConfig.name}
-          </span>
-          <span className="text-xs tracking-widest uppercase text-ink-faint">
-            {siteConfig.tagline}
-          </span>
+        <Link href="/" className="group flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt={siteConfig.name}
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0"
+            priority
+            unoptimized
+          />
+          <div className="flex flex-col">
+            <span className="font-serif text-2xl font-semibold tracking-tight text-depth transition-colors group-hover:text-gold">
+              {siteConfig.name}
+            </span>
+            <span className="text-xs tracking-widest uppercase text-ink-faint">
+              {siteConfig.tagline}
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

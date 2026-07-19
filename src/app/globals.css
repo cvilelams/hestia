@@ -1,19 +1,31 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Fundos — neutros quentes originais */
   --color-hearth: #f5f0e8;
   --color-hearth-deep: #ebe3d6;
-  --color-depth: #2c3e5c;
-  --color-depth-light: #3d5278;
-  --color-gold: #b8956a;
-  --color-gold-light: #d4b896;
-  --color-sage: #6b7f6b;
-  --color-stone: #8b8478;
-  --color-ink: #1a1814;
-  --color-ink-muted: #5c574f;
-  --color-ink-faint: #8a847a;
   --color-surface: #faf8f4;
   --color-border: #ddd5c8;
+
+  /* Marca — paleta instituto */
+  --color-primary: #bc5327;
+  --color-primary-light: #d4653a;
+  --color-inst-bg: #fff8d2;
+  --color-sage: #59823f;
+  --color-depth: #4c481f;
+  --color-depth-light: #5e5928;
+  --color-surface-accent: #cc8961;
+  --color-surface-peach: #e2ac96;
+
+  /* Tipografia */
+  --color-ink: #3d1e19;
+  --color-ink-muted: #5c3d35;
+  --color-ink-faint: #8a6b63;
+  --color-stone: #8a6b63;
+
+  /* Aliases semânticos */
+  --color-gold: #bc5327;
+  --color-gold-light: #cc8961;
 
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-source-sans);

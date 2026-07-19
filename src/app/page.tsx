@@ -28,13 +28,13 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/cursos-e-eventos"
-              className="rounded-full bg-depth px-8 py-3 text-sm font-medium text-hearth transition-colors hover:bg-depth-light"
+              className="rounded-full bg-primary px-8 py-3 text-sm font-medium text-inst-bg transition-colors hover:bg-primary-light"
             >
               Ver cursos e eventos
             </Link>
             <Link
               href="/quem-somos"
-              className="rounded-full border border-depth px-8 py-3 text-sm font-medium text-depth transition-colors hover:bg-depth hover:text-hearth"
+              className="rounded-full border border-sage px-8 py-3 text-sm font-medium text-depth transition-colors hover:bg-hearth-deep"
             >
               Conheça o centro
             </Link>
@@ -143,7 +143,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contatos"
-            className="mt-8 inline-flex rounded-full bg-gold px-8 py-3 text-sm font-medium text-ink transition-colors hover:bg-gold-light"
+            className="mt-8 inline-flex rounded-full bg-primary px-8 py-3 text-sm font-medium text-inst-bg transition-colors hover:bg-primary-light"
           >
             Fale conosco
           </Link>

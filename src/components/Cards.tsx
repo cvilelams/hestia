@@ -69,7 +69,7 @@ export function CourseCard({ course }: { course: Course }) {
       {course.openForEnrollment ? (
         <Link
           href={`/contatos?inscricao=${encodeURIComponent(course.title)}`}
-          className="mt-5 inline-flex items-center justify-center rounded-full border border-depth px-5 py-2.5 text-sm font-medium text-depth transition-colors hover:bg-depth hover:text-hearth"
+          className="mt-5 inline-flex items-center justify-center rounded-full border border-sage px-5 py-2.5 text-sm font-medium text-depth transition-colors hover:bg-hearth-deep"
         >
           Inscrever-se
         </Link>

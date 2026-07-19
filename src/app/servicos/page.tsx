@@ -35,7 +35,7 @@ export default function ServicosPage() {
           </p>
           <Link
             href="/contatos"
-            className="mt-6 inline-flex rounded-full bg-depth px-8 py-3 text-sm font-medium text-hearth transition-colors hover:bg-depth-light"
+            className="mt-6 inline-flex rounded-full bg-primary px-8 py-3 text-sm font-medium text-inst-bg transition-colors hover:bg-primary-light"
           >
             Fale conosco
           </Link>

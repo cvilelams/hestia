@@ -96,7 +96,7 @@ export function ContactForm({
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex items-center justify-center rounded-full bg-depth px-8 py-3 text-sm font-medium text-hearth transition-colors hover:bg-depth-light disabled:opacity-60"
+        className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-inst-bg transition-colors hover:bg-primary-light disabled:opacity-60"
       >
         {status === "loading"
           ? "Enviando..."
